@@ -16,5 +16,5 @@ new_data = {
 }
 # proxies=IP  resquests模块构建请求
 print("代理后的IP:   "+requests.get(url, proxies=new_data).text)
-#切换回自己的IP是  当 当前代理IP失效后向代理IP提供商获取新IP的时候需要使用自己的ip
+#切换回自己的IP是  当 当前代理IP失效后向代理IP提供商获取新IP的时候需要使用自己的ip 测试
 print("切换回自己的IP:   "+requests.get(url, proxies={"http": ""}).text)
